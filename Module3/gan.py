@@ -138,7 +138,7 @@ for epoch in range(25):
         if i%100==0:
             vutils.save_image(real,"%s/real_samples.png"%"./results", normalize=True)
             fake = netG(noise)
-            vutils.save_image(fake,"%s/fake_samples_epoch_%03.d.png"%("./results",epoch), normalize=True)
+            vutils.save_image(fake.data,"%s/fake_samples_epoch_%03.d.png"%("./results",epoch), normalize=True)
         
             
 
